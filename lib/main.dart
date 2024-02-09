@@ -1,3 +1,4 @@
+import 'package:efficisync/features/onboadring_screen/screens/onboarding_screen.dart';
 import 'package:efficisync/features/todo/screens/homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -25,7 +26,8 @@ class MyApp extends StatelessWidget {
                   ColorScheme.fromSeed(seedColor: Colors.deepPurpleAccent),
               useMaterial3: true,
             ),
-            home: const HomePage(),
+            themeMode: ThemeMode.dark,
+            home: const OnboardingScreen(),
           );
         });
   }
