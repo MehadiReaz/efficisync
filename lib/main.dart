@@ -1,5 +1,5 @@
-import 'package:efficisync/features/onboadring_screen/screens/onboarding_screen.dart';
-import 'package:efficisync/features/todo/screens/homepage.dart';
+import 'package:efficisync/common/utils/constants.dart';
+import 'package:efficisync/features/todo/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -22,12 +22,13 @@ class MyApp extends StatelessWidget {
             title: 'EfficiSync',
             debugShowCheckedModeBanner: false,
             theme: ThemeData(
+              scaffoldBackgroundColor: AppConst.kDark,
               colorScheme:
                   ColorScheme.fromSeed(seedColor: Colors.deepPurpleAccent),
               useMaterial3: true,
             ),
             themeMode: ThemeMode.dark,
-            home: const OnboardingScreen(),
+            home: const HomeScreen(),
           );
         });
   }
